@@ -1,0 +1,9 @@
+Usuario >> Role 	       >> senha
+
+João       Executivo Vendas       1234
+Maria	   Finaneceiro
+Julio	   Expositor
+Mario      Gerente
+Lucia	   Vice Presidente
+Carla	   Diretor de Eventos
+Paulo	   Diretor Financeiro

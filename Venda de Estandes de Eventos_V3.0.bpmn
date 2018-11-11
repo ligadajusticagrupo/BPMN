@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd" exporter="BonitaSoft" exporterVersion="7.7.4" expressionLanguage="http://groovy.apache.org/" targetNamespace="http://bonitasoft.com/_siD80OIfEeinw9uQDXIcMQ">
+  <model:collaboration id="_siD80OIfEeinw9uQDXIcMQ">
+    <model:participant id="_SPIE8OXXEei-tcOd_sjEjQ" name="Vendas de Estandes" processRef="_siD80eIfEeinw9uQDXIcMQ"/>
+    <model:participant id="_7c2ZQOXREei-tcOd_sjEjQ" name="executivoVenda"/>
+    <model:participant id="_FYEFMOXSEei-tcOd_sjEjQ" name="expositor"/>
+    <model:participant id="_IC-zUOXSEei-tcOd_sjEjQ" name="financeiro"/>
+    <model:participant id="_Jilk4OXSEei-tcOd_sjEjQ" name="gerente"/>
+    <model:participant id="_K20z8OXSEei-tcOd_sjEjQ" name="diretorVendas"/>
+    <model:participant id="_MLcdgOXSEei-tcOd_sjEjQ" name="diretorFinanceiro"/>
+    <model:participant id="_NXhPEOXSEei-tcOd_sjEjQ" name="vicePresidente"/>
+  </model:collaboration>
+  <model:process id="_siD80eIfEeinw9uQDXIcMQ" name="Vendas de Estandes">
+    <model:ioSpecification id="_SPJ6IeXXEei-tcOd_sjEjQ">
+      <model:dataInput id="_SPJ6IuXXEei-tcOd_sjEjQ" itemSubjectRef="_a4f9QOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6KOXXEei-tcOd_sjEjQ" itemSubjectRef="_dCK_gOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6LuXXEei-tcOd_sjEjQ" itemSubjectRef="_erP2IOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6NOXXEei-tcOd_sjEjQ" itemSubjectRef="_g284sOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6OuXXEei-tcOd_sjEjQ" itemSubjectRef="_mQZpoOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6QOXXEei-tcOd_sjEjQ" itemSubjectRef="_oj0dwOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6RuXXEei-tcOd_sjEjQ" itemSubjectRef="_qjnyUOXREei-tcOd_sjEjQ"/>
+      <model:dataInput id="_SPJ6TOXXEei-tcOd_sjEjQ" itemSubjectRef="_xey0sOXREei-tcOd_sjEjQ"/>
+      <model:inputSet id="_SPJ6I-XXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6IuXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6KeXXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6KOXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6L-XXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6LuXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6NeXXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6NOXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6O-XXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6OuXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6QeXXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6QOXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6R-XXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6RuXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_SPJ6TeXXEei-tcOd_sjEjQ">
+        <model:dataInputRefs>_SPJ6TOXXEei-tcOd_sjEjQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:outputSet id="_SPJ6UeXXEei-tcOd_sjEjQ"/>
+    </model:ioSpecification>
+    <model:laneSet id="Vendas de Estandes_laneSet">
+      <model:lane id="_siD9NOIfEeinw9uQDXIcMQ" name="Vice Presidente">
+        <model:flowNodeRef>_T-GpQOOoEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD9NeIfEeinw9uQDXIcMQ" name="Diretor Financeiro">
+        <model:flowNodeRef>_9osGcOOnEeibDfr4bsGqqA</model:flowNodeRef>
+        <model:flowNodeRef>_QCiLkOOoEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD9M-IfEeinw9uQDXIcMQ" name="Diretor de Eventos">
+        <model:flowNodeRef>__2tSoOOmEeibDfr4bsGqqA</model:flowNodeRef>
+        <model:flowNodeRef>_mKSiUOOnEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD9MuIfEeinw9uQDXIcMQ" name="Gerente">
+        <model:flowNodeRef>_0BSdcOOeEeibDfr4bsGqqA</model:flowNodeRef>
+        <model:flowNodeRef>_1qpA4OOeEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD80uIfEeinw9uQDXIcMQ" name="Executivo de Vendas">
+        <model:flowNodeRef>_siD80-IfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD82OIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD86OIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD8-OIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD9COIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD9GOIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_QSbNQOOeEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD9IuIfEeinw9uQDXIcMQ" name="Expositor">
+        <model:flowNodeRef>_siD9I-IfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD9KOIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD9LeIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_b-0QIOIjEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_mQdAQOOdEeibDfr4bsGqqA</model:flowNodeRef>
+        <model:flowNodeRef>_qfX3wOOdEeibDfr4bsGqqA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_siD9NuIfEeinw9uQDXIcMQ" name="Financeiro">
+        <model:flowNodeRef>_siD9N-IfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_siD9QeIfEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_O1yrwOIgEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_E7xAsOIiEeinw9uQDXIcMQ</model:flowNodeRef>
+        <model:flowNodeRef>_8uALYOOdEeibDfr4bsGqqA</model:flowNodeRef>
+        <model:flowNodeRef>_OezqcOXWEei-tcOd_sjEjQ</model:flowNodeRef>
+      </model:lane>
+    </model:laneSet>
+    <model:dataObject id="DataObject_SPJ6IOXXEei-tcOd_sjEjQ_a4f9QOXREei-tcOd_sjEjQ" name="nomeEmpresa" isCollection="false" itemSubjectRef="_a4f9QOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6J-XXEei-tcOd_sjEjQ_dCK_gOXREei-tcOd_sjEjQ" name="cnpj" isCollection="false" itemSubjectRef="_dCK_gOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6LeXXEei-tcOd_sjEjQ_erP2IOXREei-tcOd_sjEjQ" name="email" isCollection="false" itemSubjectRef="_erP2IOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6M-XXEei-tcOd_sjEjQ_g284sOXREei-tcOd_sjEjQ" name="telefoneContato" isCollection="false" itemSubjectRef="_g284sOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6OeXXEei-tcOd_sjEjQ_mQZpoOXREei-tcOd_sjEjQ" name="qtdEstandes" isCollection="false" itemSubjectRef="_mQZpoOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6P-XXEei-tcOd_sjEjQ_oj0dwOXREei-tcOd_sjEjQ" name="valorEstande" isCollection="false" itemSubjectRef="_oj0dwOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6ReXXEei-tcOd_sjEjQ_qjnyUOXREei-tcOd_sjEjQ" name="percentualDesconto" isCollection="false" itemSubjectRef="_qjnyUOXREei-tcOd_sjEjQ"/>
+    <model:dataObject id="DataObject_SPJ6S-XXEei-tcOd_sjEjQ_xey0sOXREei-tcOd_sjEjQ" name="aprovado" isCollection="false" itemSubjectRef="_xey0sOXREei-tcOd_sjEjQ"/>
+    <model:serviceTask id="_T-GpQOOoEeibDfr4bsGqqA" name="Análise do Desconto Nível 4"/>
+    <model:serviceTask id="_9osGcOOnEeibDfr4bsGqqA" name="Análise do Desconto Nível 3"/>
+    <model:parallelGateway id="_QCiLkOOoEeibDfr4bsGqqA" name="Validar Desconto / Financeiro"/>
+    <model:serviceTask id="__2tSoOOmEeibDfr4bsGqqA" name="Análise do Desconto Nível 2"/>
+    <model:parallelGateway id="_mKSiUOOnEeibDfr4bsGqqA" name="Validar Desconto / Eventos"/>
+    <model:userTask id="_0BSdcOOeEeibDfr4bsGqqA" name="Análise do Desconto">
+      <model:performer id="_SPNkgOXXEei-tcOd_sjEjQ">
+        <model:resourceRef>_Jilk4OXSEei-tcOd_sjEjQ</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:parallelGateway id="_1qpA4OOeEeibDfr4bsGqqA" name="Valida Desconto"/>
+    <model:startEvent id="_siD80-IfEeinw9uQDXIcMQ" name="Start1"/>
+    <model:userTask id="_siD82OIfEeinw9uQDXIcMQ" name="Negociação do Espaço para o Evento"/>
+    <model:userTask id="_siD86OIfEeinw9uQDXIcMQ" name="Criação da Oportunidade"/>
+    <model:userTask id="_siD8-OIfEeinw9uQDXIcMQ" name="Emissão do Pedido"/>
+    <model:userTask id="_siD9COIfEeinw9uQDXIcMQ" name="Criação de Desconto"/>
+    <model:task id="_siD9GOIfEeinw9uQDXIcMQ" name="Envio da Proposta"/>
+    <model:serviceTask id="_QSbNQOOeEeibDfr4bsGqqA" name="Envio de Email para Aprovador Nível 1"/>
+    <model:parallelGateway id="_siD9I-IfEeinw9uQDXIcMQ" name="Tem Interesse ?"/>
+    <model:endEvent id="_siD9KOIfEeinw9uQDXIcMQ" name="Recusado"/>
+    <model:parallelGateway id="_siD9LeIfEeinw9uQDXIcMQ" name="Resposta da Proposta"/>
+    <model:endEvent id="_b-0QIOIjEeinw9uQDXIcMQ" name="End1"/>
+    <model:userTask id="_mQdAQOOdEeibDfr4bsGqqA" name="Envio do Contrato">
+      <model:performer id="_SPSdBOXXEei-tcOd_sjEjQ">
+        <model:resourceRef>_FYEFMOXSEei-tcOd_sjEjQ</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:intermediateCatchEvent id="_qfX3wOOdEeibDfr4bsGqqA" name="Timer3">
+      <model:timerEventDefinition id="eventdef-Timer3">
+        <model:timeCycle>2592000000L</model:timeCycle>
+      </model:timerEventDefinition>
+    </model:intermediateCatchEvent>
+    <model:serviceTask id="_siD9N-IfEeinw9uQDXIcMQ" name="Integração com ERP Financeiro"/>
+    <model:userTask id="_siD9QeIfEeinw9uQDXIcMQ" name="Análise do Pedido">
+      <model:performer id="_SPTrIeXXEei-tcOd_sjEjQ">
+        <model:resourceRef>_Jilk4OXSEei-tcOd_sjEjQ</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:parallelGateway id="_O1yrwOIgEeinw9uQDXIcMQ" name="Validação do Pedido"/>
+    <model:userTask id="_E7xAsOIiEeinw9uQDXIcMQ" name="Emitir o Contrato"/>
+    <model:endEvent id="_8uALYOOdEeibDfr4bsGqqA" name="End2"/>
+    <model:userTask id="_OezqcOXWEei-tcOd_sjEjQ" name="Contrato Assinado"/>
+    <model:sequenceFlow id="_siD9YeIfEeinw9uQDXIcMQ" name="" sourceRef="_siD80-IfEeinw9uQDXIcMQ" targetRef="_siD82OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9ZOIfEeinw9uQDXIcMQ" name="" sourceRef="_siD82OIfEeinw9uQDXIcMQ" targetRef="_siD9I-IfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9Z-IfEeinw9uQDXIcMQ" name="Não Tem Interesse" sourceRef="_siD9I-IfEeinw9uQDXIcMQ" targetRef="_siD9KOIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9auIfEeinw9uQDXIcMQ" name="Tem Interesse" sourceRef="_siD9I-IfEeinw9uQDXIcMQ" targetRef="_siD86OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9beIfEeinw9uQDXIcMQ" name="" sourceRef="_siD86OIfEeinw9uQDXIcMQ" targetRef="_siD9GOIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9cOIfEeinw9uQDXIcMQ" name="Aceite" sourceRef="_siD9LeIfEeinw9uQDXIcMQ" targetRef="_siD8-OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9c-IfEeinw9uQDXIcMQ" name="Recusado" sourceRef="_siD9LeIfEeinw9uQDXIcMQ" targetRef="_siD9KOIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9duIfEeinw9uQDXIcMQ" name="Aplicação de Desconto" sourceRef="_siD9LeIfEeinw9uQDXIcMQ" targetRef="_siD9COIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9eeIfEeinw9uQDXIcMQ" name="" sourceRef="_siD8-OIfEeinw9uQDXIcMQ" targetRef="_siD9N-IfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9fOIfEeinw9uQDXIcMQ" name="" sourceRef="_siD9N-IfEeinw9uQDXIcMQ" targetRef="_siD9QeIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_siD9f-IfEeinw9uQDXIcMQ" name="" sourceRef="_siD9GOIfEeinw9uQDXIcMQ" targetRef="_siD9LeIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_O171tOIgEeinw9uQDXIcMQ" name="" sourceRef="_siD9QeIfEeinw9uQDXIcMQ" targetRef="_O1yrwOIgEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_4BwBXeIhEeinw9uQDXIcMQ" name="Pedido Aceito" sourceRef="_O1yrwOIgEeinw9uQDXIcMQ" targetRef="_E7xAsOIiEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_xvoGgOIiEeinw9uQDXIcMQ" name="Pedido Rejeitado" sourceRef="_O1yrwOIgEeinw9uQDXIcMQ" targetRef="_siD8-OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_-89qjeIiEeinw9uQDXIcMQ" name="" sourceRef="_E7xAsOIiEeinw9uQDXIcMQ" targetRef="_mQdAQOOdEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_tbKLMOIjEeinw9uQDXIcMQ" name="" sourceRef="_mQdAQOOdEeibDfr4bsGqqA" targetRef="_OezqcOXWEei-tcOd_sjEjQ"/>
+    <model:sequenceFlow id="_rSYpEOOdEeibDfr4bsGqqA" name="" sourceRef="_mQdAQOOdEeibDfr4bsGqqA" targetRef="_qfX3wOOdEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_vR6ZsOOdEeibDfr4bsGqqA" name="" sourceRef="_qfX3wOOdEeibDfr4bsGqqA" targetRef="_b-0QIOIjEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_8uJ8ZOOdEeibDfr4bsGqqA" name="" sourceRef="_OezqcOXWEei-tcOd_sjEjQ" targetRef="_8uALYOOdEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_QSk-QOOeEeibDfr4bsGqqA" name="" sourceRef="_siD9COIfEeinw9uQDXIcMQ" targetRef="_QSbNQOOeEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_Wv3x0OOeEeibDfr4bsGqqA" name="" sourceRef="_QSbNQOOeEeibDfr4bsGqqA" targetRef="_0BSdcOOeEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_1qyx5OOeEeibDfr4bsGqqA" name="" sourceRef="_0BSdcOOeEeibDfr4bsGqqA" targetRef="_1qpA4OOeEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_KBflQOOfEeibDfr4bsGqqA" name="Desconto Rejeitado" sourceRef="_1qpA4OOeEeibDfr4bsGqqA" targetRef="_siD86OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_zYFOwOOmEeibDfr4bsGqqA" name="Desconto Aprovado" sourceRef="_1qpA4OOeEeibDfr4bsGqqA" targetRef="_siD8-OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="__2yyMOOmEeibDfr4bsGqqA" name="Aprovado Valor Acima de 25 mil" sourceRef="_1qpA4OOeEeibDfr4bsGqqA" targetRef="__2tSoOOmEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_mKSiWeOnEeibDfr4bsGqqA" name="" sourceRef="__2tSoOOmEeibDfr4bsGqqA" targetRef="_mKSiUOOnEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_y2g9UOOnEeibDfr4bsGqqA" name="Desconto Reprovado" sourceRef="_mKSiUOOnEeibDfr4bsGqqA" targetRef="_siD86OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_4bzx4OOnEeibDfr4bsGqqA" name="Desconto Aprovado" sourceRef="_mKSiUOOnEeibDfr4bsGqqA" targetRef="_siD8-OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_9ovJwOOnEeibDfr4bsGqqA" name="Aprovado Desconto Acima de 5 porcento" sourceRef="_mKSiUOOnEeibDfr4bsGqqA" targetRef="_9osGcOOnEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_QCiLmeOoEeibDfr4bsGqqA" name="" sourceRef="_9osGcOOnEeibDfr4bsGqqA" targetRef="_QCiLkOOoEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_T-GpTeOoEeibDfr4bsGqqA" name="Desconto acima de 7 por cento" sourceRef="_QCiLkOOoEeibDfr4bsGqqA" targetRef="_T-GpQOOoEeibDfr4bsGqqA"/>
+    <model:sequenceFlow id="_XyNNAOOoEeibDfr4bsGqqA" name="Desconto Rejeitado" sourceRef="_QCiLkOOoEeibDfr4bsGqqA" targetRef="_siD86OIfEeinw9uQDXIcMQ"/>
+    <model:sequenceFlow id="_fDvg8OOoEeibDfr4bsGqqA" name="Desconto Aprovado" sourceRef="_QCiLkOOoEeibDfr4bsGqqA" targetRef="_siD8-OIfEeinw9uQDXIcMQ"/>
+  </model:process>
+  <model:itemDefinition id="_a4f9QOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_dCK_gOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_erP2IOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_g284sOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_mQZpoOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_oj0dwOXREei-tcOd_sjEjQ" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_qjnyUOXREei-tcOd_sjEjQ" structureRef="java:java.lang.Double"/>
+  <model:itemDefinition id="_xey0sOXREei-tcOd_sjEjQ" structureRef="java:java.lang.Boolean"/>
+  <di:BPMNDiagram name="Venda de Estandes de Eventos">
+    <di:BPMNPlane id="plane__siD80OIfEeinw9uQDXIcMQ" bpmnElement="_siD80OIfEeinw9uQDXIcMQ">
+      <di:BPMNShape id="_siD9neIfEeinw9uQDXIcMQ" bpmnElement="_SPIE8OXXEei-tcOd_sjEjQ" isHorizontal="true">
+        <dc:Bounds height="1468.0" width="2409.0" x="0.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD93-IfEeinw9uQDXIcMQ" bpmnElement="_siD9NOIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="133.0" width="2379.0" x="30.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_T-GpSuOoEeibDfr4bsGqqA" bpmnElement="_T-GpQOOoEeibDfr4bsGqqA">
+        <dc:Bounds height="60.0" width="120.0" x="2078.0" y="27.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD95-IfEeinw9uQDXIcMQ" bpmnElement="_siD9NeIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="163.0" width="2379.0" x="30.0" y="133.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_9ostgOOnEeibDfr4bsGqqA" bpmnElement="_9osGcOOnEeibDfr4bsGqqA">
+        <dc:Bounds height="60.0" width="120.0" x="1859.0" y="160.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QCiLleOoEeibDfr4bsGqqA" bpmnElement="_QCiLkOOoEeibDfr4bsGqqA">
+        <dc:Bounds height="43.0" width="43.0" x="2106.0" y="170.0"/>
+        <di:BPMNLabel id="_SPMWYOXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="215.0" x="2020.0" y="218.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD91-IfEeinw9uQDXIcMQ" bpmnElement="_siD9M-IfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="154.0" width="2379.0" x="30.0" y="296.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="__2t5sOOmEeibDfr4bsGqqA" bpmnElement="__2tSoOOmEeibDfr4bsGqqA">
+        <dc:Bounds height="60.0" width="120.0" x="1638.0" y="335.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_mKSiVeOnEeibDfr4bsGqqA" bpmnElement="_mKSiUOOnEeibDfr4bsGqqA">
+        <dc:Bounds height="43.0" width="43.0" x="1890.0" y="343.0"/>
+        <di:BPMNLabel id="_SPMWYuXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="192.0" x="1815.0" y="391.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9z-IfEeinw9uQDXIcMQ" bpmnElement="_siD9MuIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="250.0" width="2379.0" x="30.0" y="450.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_0BSdgOOeEeibDfr4bsGqqA" bpmnElement="_0BSdcOOeEeibDfr4bsGqqA">
+        <dc:Bounds height="50.0" width="100.0" x="1451.0" y="668.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_1qyx4OOeEeibDfr4bsGqqA" bpmnElement="_1qpA4OOeEeibDfr4bsGqqA">
+        <dc:Bounds height="43.0" width="43.0" x="1684.0" y="671.0"/>
+        <di:BPMNLabel id="_SPOLkOXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="111.0" x="1650.0" y="719.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9oOIfEeinw9uQDXIcMQ" bpmnElement="_siD80uIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="199.0" width="2379.0" x="30.0" y="700.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9o-IfEeinw9uQDXIcMQ" bpmnElement="_siD80-IfEeinw9uQDXIcMQ">
+        <dc:Bounds height="30.0" width="30.0" x="90.0" y="768.0"/>
+        <di:BPMNLabel id="_SPPZsOXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="44.0" x="83.0" y="803.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9p-IfEeinw9uQDXIcMQ" bpmnElement="_siD82OIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="60.0" width="120.0" x="225.0" y="768.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9quIfEeinw9uQDXIcMQ" bpmnElement="_siD86OIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="60.0" width="120.0" x="472.0" y="775.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9reIfEeinw9uQDXIcMQ" bpmnElement="_siD8-OIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="50.0" width="100.0" x="918.0" y="775.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9sOIfEeinw9uQDXIcMQ" bpmnElement="_siD9COIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="50.0" width="100.0" x="1118.0" y="780.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9s-IfEeinw9uQDXIcMQ" bpmnElement="_siD9GOIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="50.0" width="100.0" x="719.0" y="780.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QSbNSuOeEeibDfr4bsGqqA" bpmnElement="_QSbNQOOeEeibDfr4bsGqqA">
+        <dc:Bounds height="60.0" width="120.0" x="1441.0" y="780.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9u-IfEeinw9uQDXIcMQ" bpmnElement="_siD9IuIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="400.0" width="2379.0" x="30.0" y="899.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9vuIfEeinw9uQDXIcMQ" bpmnElement="_siD9I-IfEeinw9uQDXIcMQ">
+        <dc:Bounds height="43.0" width="43.0" x="396.0" y="1126.0"/>
+        <di:BPMNLabel id="_SPSdAOXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="111.0" x="362.0" y="1174.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9wuIfEeinw9uQDXIcMQ" bpmnElement="_siD9KOIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="30.0" width="30.0" x="1023.0" y="1139.0"/>
+        <di:BPMNLabel id="_SPSdAeXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="59.0" x="1009.0" y="1174.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD9xuIfEeinw9uQDXIcMQ" bpmnElement="_siD9LeIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="43.0" width="43.0" x="776.0" y="955.0"/>
+        <di:BPMNLabel id="_SPSdAuXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="148.0" x="731.0" y="1005.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_b-0QJeIjEeinw9uQDXIcMQ" bpmnElement="_b-0QIOIjEeinw9uQDXIcMQ">
+        <dc:Bounds height="30.0" width="30.0" x="1764.0" y="983.0"/>
+        <di:BPMNLabel id="_SPSdA-XXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="29.0" x="1765.0" y="1018.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_mQdAUOOdEeibDfr4bsGqqA" bpmnElement="_mQdAQOOdEeibDfr4bsGqqA">
+        <dc:Bounds height="50.0" width="100.0" x="1588.0" y="1079.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_qfZF4OOdEeibDfr4bsGqqA" bpmnElement="_qfX3wOOdEeibDfr4bsGqqA">
+        <dc:Bounds height="30.0" width="30.0" x="1764.0" y="1089.0"/>
+        <di:BPMNLabel id="_SPTEEOXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="44.0" x="1757.0" y="1124.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD97-IfEeinw9uQDXIcMQ" bpmnElement="_siD9NuIfEeinw9uQDXIcMQ" isHorizontal="true">
+        <dc:Bounds height="169.0" width="2379.0" x="30.0" y="1299.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD98uIfEeinw9uQDXIcMQ" bpmnElement="_siD9N-IfEeinw9uQDXIcMQ">
+        <dc:Bounds height="60.0" width="120.0" x="966.0" y="1343.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_siD99eIfEeinw9uQDXIcMQ" bpmnElement="_siD9QeIfEeinw9uQDXIcMQ">
+        <dc:Bounds height="50.0" width="100.0" x="1174.0" y="1348.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_O171sOIgEeinw9uQDXIcMQ" bpmnElement="_O1yrwOIgEeinw9uQDXIcMQ">
+        <dc:Bounds height="43.0" width="43.0" x="1395.0" y="1351.0"/>
+        <di:BPMNLabel id="_SPTrI-XXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="140.0" x="1346.0" y="1399.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_E7xAwOIiEeinw9uQDXIcMQ" bpmnElement="_E7xAsOIiEeinw9uQDXIcMQ">
+        <dc:Bounds height="50.0" width="100.0" x="1585.0" y="1348.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_8uJ8YOOdEeibDfr4bsGqqA" bpmnElement="_8uALYOOdEeibDfr4bsGqqA">
+        <dc:Bounds height="30.0" width="30.0" x="1897.0" y="1364.0"/>
+        <di:BPMNLabel id="_SPTrJeXXEei-tcOd_sjEjQ" labelStyle="_SPJ6UuXXEei-tcOd_sjEjQ">
+          <dc:Bounds height="17.0" width="29.0" x="1898.0" y="1399.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_Oe6_MOXWEei-tcOd_sjEjQ" bpmnElement="_OezqcOXWEei-tcOd_sjEjQ">
+        <dc:Bounds height="50.0" width="100.0" x="1737.0" y="1348.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_siD-A-IfEeinw9uQDXIcMQ" bpmnElement="_siD9YeIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="120.0" y="790.0"/>
+        <di_1:waypoint x="225.0" y="790.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-COIfEeinw9uQDXIcMQ" bpmnElement="_siD9ZOIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="296.0" y="828.0"/>
+        <di_1:waypoint x="296.0" y="972.0"/>
+        <di_1:waypoint x="409.0" y="972.0"/>
+        <di_1:waypoint x="409.0" y="1126.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-DeIfEeinw9uQDXIcMQ" bpmnElement="_siD9Z-IfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="439.0" y="1150.0"/>
+        <di_1:waypoint x="1023.0" y="1150.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-EuIfEeinw9uQDXIcMQ" bpmnElement="_siD9auIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="424.0" y="1126.0"/>
+        <di_1:waypoint x="424.0" y="976.0"/>
+        <di_1:waypoint x="474.0" y="976.0"/>
+        <di_1:waypoint x="474.0" y="835.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-F-IfEeinw9uQDXIcMQ" bpmnElement="_siD9beIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="592.0" y="805.0"/>
+        <di_1:waypoint x="719.0" y="805.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-HOIfEeinw9uQDXIcMQ" bpmnElement="_siD9cOIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="818.0" y="955.0"/>
+        <di_1:waypoint x="818.0" y="888.0"/>
+        <di_1:waypoint x="943.0" y="888.0"/>
+        <di_1:waypoint x="943.0" y="825.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-IeIfEeinw9uQDXIcMQ" bpmnElement="_siD9c-IfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="819.0" y="991.0"/>
+        <di_1:waypoint x="917.0" y="991.0"/>
+        <di_1:waypoint x="917.0" y="1142.0"/>
+        <di_1:waypoint x="1023.0" y="1142.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-KOIfEeinw9uQDXIcMQ" bpmnElement="_siD9duIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="819.0" y="966.0"/>
+        <di_1:waypoint x="982.0" y="966.0"/>
+        <di_1:waypoint x="982.0" y="827.0"/>
+        <di_1:waypoint x="1118.0" y="827.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-LeIfEeinw9uQDXIcMQ" bpmnElement="_siD9eeIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="997.0" y="825.0"/>
+        <di_1:waypoint x="997.0" y="1343.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-MuIfEeinw9uQDXIcMQ" bpmnElement="_siD9fOIfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1086.0" y="1373.0"/>
+        <di_1:waypoint x="1174.0" y="1373.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_siD-N-IfEeinw9uQDXIcMQ" bpmnElement="_siD9f-IfEeinw9uQDXIcMQ">
+        <di_1:waypoint x="751.0" y="830.0"/>
+        <di_1:waypoint x="751.0" y="899.0"/>
+        <di_1:waypoint x="784.0" y="899.0"/>
+        <di_1:waypoint x="784.0" y="955.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_O171t-IgEeinw9uQDXIcMQ" bpmnElement="_O171tOIgEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1274.0" y="1372.0"/>
+        <di_1:waypoint x="1395.0" y="1372.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_4BwBYOIhEeinw9uQDXIcMQ" bpmnElement="_4BwBXeIhEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1438.0" y="1372.0"/>
+        <di_1:waypoint x="1585.0" y="1372.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_xvoGg-IiEeinw9uQDXIcMQ" bpmnElement="_xvoGgOIiEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1414.0" y="1351.0"/>
+        <di_1:waypoint x="1414.0" y="1063.0"/>
+        <di_1:waypoint x="1393.0" y="1063.0"/>
+        <di_1:waypoint x="1393.0" y="1067.0"/>
+        <di_1:waypoint x="1347.0" y="1067.0"/>
+        <di_1:waypoint x="1347.0" y="731.0"/>
+        <di_1:waypoint x="963.0" y="731.0"/>
+        <di_1:waypoint x="963.0" y="775.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_-89qkOIiEeinw9uQDXIcMQ" bpmnElement="_-89qjeIiEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1636.0" y="1348.0"/>
+        <di_1:waypoint x="1636.0" y="1129.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_tbKLM-IjEeinw9uQDXIcMQ" bpmnElement="_tbKLMOIjEeinw9uQDXIcMQ">
+        <di_1:waypoint x="1651.0" y="1129.0"/>
+        <di_1:waypoint x="1651.0" y="1238.0"/>
+        <di_1:waypoint x="1773.0" y="1238.0"/>
+        <di_1:waypoint x="1773.0" y="1348.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_rSYpE-OdEeibDfr4bsGqqA" bpmnElement="_rSYpEOOdEeibDfr4bsGqqA">
+        <di_1:waypoint x="1688.0" y="1111.0"/>
+        <di_1:waypoint x="1764.0" y="1111.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_vR6Zs-OdEeibDfr4bsGqqA" bpmnElement="_vR6ZsOOdEeibDfr4bsGqqA">
+        <di_1:waypoint x="1776.0" y="1089.0"/>
+        <di_1:waypoint x="1776.0" y="1013.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_8uJ8Z-OdEeibDfr4bsGqqA" bpmnElement="_8uJ8ZOOdEeibDfr4bsGqqA">
+        <di_1:waypoint x="1837.0" y="1376.0"/>
+        <di_1:waypoint x="1897.0" y="1376.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_QSk-Q-OeEeibDfr4bsGqqA" bpmnElement="_QSk-QOOeEeibDfr4bsGqqA">
+        <di_1:waypoint x="1218.0" y="807.0"/>
+        <di_1:waypoint x="1441.0" y="807.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_Wv4Y4OOeEeibDfr4bsGqqA" bpmnElement="_Wv3x0OOeEeibDfr4bsGqqA">
+        <di_1:waypoint x="1501.0" y="780.0"/>
+        <di_1:waypoint x="1501.0" y="718.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_1qyx5-OeEeibDfr4bsGqqA" bpmnElement="_1qyx5OOeEeibDfr4bsGqqA">
+        <di_1:waypoint x="1551.0" y="692.0"/>
+        <di_1:waypoint x="1684.0" y="692.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_KBflQ-OfEeibDfr4bsGqqA" bpmnElement="_KBflQOOfEeibDfr4bsGqqA">
+        <di_1:waypoint x="1684.0" y="694.0"/>
+        <di_1:waypoint x="1104.0" y="694.0"/>
+        <di_1:waypoint x="1104.0" y="799.0"/>
+        <di_1:waypoint x="592.0" y="799.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zYOYsuOmEeibDfr4bsGqqA" bpmnElement="_zYFOwOOmEeibDfr4bsGqqA">
+        <di_1:waypoint x="1690.0" y="671.0"/>
+        <di_1:waypoint x="1690.0" y="556.0"/>
+        <di_1:waypoint x="997.0" y="556.0"/>
+        <di_1:waypoint x="997.0" y="775.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="__2zZQOOmEeibDfr4bsGqqA" bpmnElement="__2yyMOOmEeibDfr4bsGqqA">
+        <di_1:waypoint x="1710.0" y="671.0"/>
+        <di_1:waypoint x="1710.0" y="395.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_mKSiXOOnEeibDfr4bsGqqA" bpmnElement="_mKSiWeOnEeibDfr4bsGqqA">
+        <di_1:waypoint x="1758.0" y="364.0"/>
+        <di_1:waypoint x="1890.0" y="364.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_y2hkYuOnEeibDfr4bsGqqA" bpmnElement="_y2g9UOOnEeibDfr4bsGqqA">
+        <di_1:waypoint x="1905.0" y="343.0"/>
+        <di_1:waypoint x="1905.0" y="277.0"/>
+        <di_1:waypoint x="1887.0" y="277.0"/>
+        <di_1:waypoint x="1887.0" y="247.0"/>
+        <di_1:waypoint x="567.0" y="247.0"/>
+        <di_1:waypoint x="567.0" y="775.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_4b0Y8OOnEeibDfr4bsGqqA" bpmnElement="_4bzx4OOnEeibDfr4bsGqqA">
+        <di_1:waypoint x="1910.0" y="386.0"/>
+        <di_1:waypoint x="1910.0" y="963.0"/>
+        <di_1:waypoint x="1882.0" y="963.0"/>
+        <di_1:waypoint x="1882.0" y="932.0"/>
+        <di_1:waypoint x="935.0" y="932.0"/>
+        <di_1:waypoint x="935.0" y="825.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_9ovw0OOnEeibDfr4bsGqqA" bpmnElement="_9ovJwOOnEeibDfr4bsGqqA">
+        <di_1:waypoint x="1915.0" y="343.0"/>
+        <di_1:waypoint x="1915.0" y="220.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_QCiLnOOoEeibDfr4bsGqqA" bpmnElement="_QCiLmeOoEeibDfr4bsGqqA">
+        <di_1:waypoint x="1979.0" y="190.0"/>
+        <di_1:waypoint x="2106.0" y="190.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_T-GpUOOoEeibDfr4bsGqqA" bpmnElement="_T-GpTeOoEeibDfr4bsGqqA">
+        <di_1:waypoint x="2132.0" y="170.0"/>
+        <di_1:waypoint x="2132.0" y="87.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_XyNNA-OoEeibDfr4bsGqqA" bpmnElement="_XyNNAOOoEeibDfr4bsGqqA">
+        <di_1:waypoint x="2106.0" y="199.0"/>
+        <di_1:waypoint x="1288.0" y="199.0"/>
+        <di_1:waypoint x="1288.0" y="780.0"/>
+        <di_1:waypoint x="592.0" y="780.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_fDvg8-OoEeibDfr4bsGqqA" bpmnElement="_fDvg8OOoEeibDfr4bsGqqA">
+        <di_1:waypoint x="2112.0" y="170.0"/>
+        <di_1:waypoint x="2112.0" y="59.0"/>
+        <di_1:waypoint x="999.0" y="59.0"/>
+        <di_1:waypoint x="999.0" y="775.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_SPJ6UuXXEei-tcOd_sjEjQ">
+      <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Segoe UI" size="9.0"/>
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>
